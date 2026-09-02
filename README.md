@@ -7,6 +7,18 @@ Una aplicación web interactiva de Pokédex desarrollada con Vue 3, TypeScript y
 ![Vite](https://img.shields.io/badge/Vite-6.4.3-646CFF?style=flat-square&logo=vite)
 ![License](https://img.shields.io/badge/license-ISC-green?style=flat-square)
 
+## 📋 Elecciones tomadas 
+
+Decidí construir esta aplicación con TypeScript porque me ofrece un código fuertemente tipado, lo que ayuda a evitar errores de datos y facilita la definición de interfaces para cada estructura que necesito manejar.
+
+También utilicé FontAwesome para la implementación de los iconos, principalmente por su facilidad de uso y porque cuenta con una integración muy clara para Vue, lo cual me resultó práctico para cargar los íconos de cada tipo de Pokémon.
+
+Elegí Pinia como gestor de estado para manejar la lista de favoritos de manera dinámica y mantener la información sincronizada en las distintas vistas de la aplicación.
+
+Además, usé Bootstrap porque me apoyó en la estructuración visual de las pantallas con clases predefinidas, acelerando el desarrollo y manteniendo un diseño más ordenado y responsive.
+
+También decidí crear varios componentes reutilizables que pueden utilizarse en distintas vistas, así como una vista por cada pantalla del menú. Para la navegación entre esas pantallas utilicé Vue Router, lo que me permitió mantener una experiencia de menú rápida y organizada.
+
 ## ✨ Características
 
 - **Catálogo Pokémon**: Explora una lista paginada de todos los Pokémon
@@ -209,8 +221,8 @@ El proyecto se conecta con la [PokéAPI](https://pokeapi.co/docs/v2) para obtene
 ## 👤 Autor
 
 **Alejandro Pineros G**
-- GitHub: [@CCAPITAL-APPS](https://github.com/CCAPITAL-APPS)
-- Email: contacto@alejandropineros.com
+- GitHub: [AlejandroPinerosG](https://github.com/AlejandroPinerosG)
+- Email: alejo_giraldo@live.com
 
 ## 📝 Licencia
 
