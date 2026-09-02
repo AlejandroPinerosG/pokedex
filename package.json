@@ -1,0 +1,65 @@
+{
+  "name": "pokedex",
+  "author": "Alejandro Pineros G",
+  "license": "ISC",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CCAPITAL-APPS/pokedex"
+  },
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite",
+    "serve:dev": "vite --mode dev",
+    "serve:qa": "vite --mode qa",
+    "serve:prod": "vite --mode prod",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "serve-mfe": "vite build && serve dist --listen 3000 --cors",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "test:coverage": "jest --coverage --passWithNoTests"
+  },
+  "husky": {
+    "pre-commit": "lint-staged"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/vue-fontawesome": "^3.1.1",
+    "axios": "^1.19.0",
+    "bootstrap": "^5.3.3",
+    "pinia": "^2.1.7",
+    "single-spa-vue": "^3.0.1",
+    "vue": "3.5.13",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/crypto-js": "^4.2.2",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^24.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "@vitejs/plugin-vue": "5.2.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.28.0",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "jiti": "^2.6.1",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3",
+    "sass": "^1.78.0",
+    "sass-loader": "13.3.3",
+    "typescript": "5.7.2",
+    "vite": "^6.4.3",
+    "vite-plugin-single-spa": "^1.0.0",
+    "vue-tsc": "2.2.0"
+  },
+  "overrides": {
+    "dompurify": "3.4.14"
+  }
+}

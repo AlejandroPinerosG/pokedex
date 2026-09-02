@@ -1,0 +1,165 @@
+$type-fire-default: #ff980080;
+$type-fire-color: #ff9800;
+$type-poison-default: #9d23c580;
+$type-poison-color: #9d23c5;
+$type-plant-default: #8dca4380;
+$type-plant-color: #8dca43;
+$type-water-default: #4596e680;
+$type-water-color: #4596e6;
+$type-electric-default: #f2c63d80;
+$type-electric-color: #f2c63d;
+$type-default: #6c757d;
+$primary-color: #1e88e5;
+$black: #000000;
+$gray-normal: #5c6970;
+$white: #ffffff;
+// This value was get in browser console
+// if header heigth change, you should update this value
+$header-height: 58px;
+
+.container {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0, 95rem;
+  padding-right: 0, 95rem;
+}
+
+h1 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: 0%;
+}
+
+p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.btn-primary {
+  min-width: 300px;
+  border-radius: 30px;
+  background: $primary-color;
+}
+
+.btn-light {
+  min-width: 300px;
+  border-radius: 30px;
+  background: #EEEEEE;
+}
+
+.primary-text {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.secondary-text {
+  color: #424242;
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.text-btn {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.text-filter {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#9E9E9E
+}
+
+input[type="text"] {
+  border: none;
+  background:none;
+}
+
+.navbar-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.navbar{
+  border-top: 2px solid;
+  border-radius: 25px;
+  border-color: #E0E0E0;
+}
+
+.text-menu {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #424242 !important;
+}
+
+.pokemonCard {
+  padding-bottom: 100px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1050;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 25px 25px 0 0;
+}
+
+.icon{
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.pokemonTypes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.typeBadge {
+  gap: 0.5rem;
+  border-radius: 999px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1;
+  padding: 5px 10px 5px 10px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--type-color);
+}

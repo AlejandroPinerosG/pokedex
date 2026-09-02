@@ -1,0 +1,17 @@
+variables:
+  - name: layer
+    value: "frontend"
+  - name: technology
+    value: "vue"
+  - name: infrastructure
+    value: "arqSop"
+  - name: serviceConnectionContainerRegistry
+    value: ""
+  - ${{ if eq(variables['build.SourceBranchName'], 'develop') }}:
+      - group: modyo-asesoriagp-dev
+  - ${{ if eq(variables['build.SourceBranchName'], 'qa') }}:
+      - group: modyo-asesoriagp-qa
+  - ${{ if eq(variables['build.SourceBranchName'], 'main') }}:
+      - group: modyo-asesoriagp-prod
+  - name: MODYO_WIDGET_NAME
+    value: $(Build.Repository.Name)
