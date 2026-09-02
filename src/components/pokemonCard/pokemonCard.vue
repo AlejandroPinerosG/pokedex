@@ -39,7 +39,7 @@
                 class="favoriteButton position-absolute top-0 end-0 m-2 d-inline-flex align-items-center justify-content-center"
                 :class="{ 'is-favorite': favoritesStore.isFavorite(pokemon.id) }"
                 type="button"
-                @click="favoritesStore.toggleFavorite(pokemon)"
+                @click.stop="toggleFavorite(pokemon)"
               >
                 <FontAwesomeIcon class="iconFavorite" icon="heart" aria-hidden="true" />
               </button>
@@ -80,6 +80,9 @@ export default defineComponent({
     },
     getPokemonTypeTheme(type: string) {
       return getPokemonTypeTheme(type)
+    },
+    toggleFavorite(pokemon: PokemonCardData) {
+      this.favoritesStore.toggleFavorite(pokemon)
     },
     goToDetail(id: number) {
       this.router.push({ name: 'pokemon-detail', params: { id } })

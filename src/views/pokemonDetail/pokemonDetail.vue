@@ -94,16 +94,6 @@
 
       <section class="weakness-section">
         <h2 class="statData mb-3">Debilidades</h2>
-        <div class="type-list">
-          <span
-            v-for="weakness in pokemon.weaknesses"
-            :key="weakness"
-            class="type-pill weakness-pill"
-          >
-            {{ weakness }}
-          </span>
-        </div>
-
       <div class="pokemonTypes">
         <span
           v-for="(weakness, weaknessIndex) in pokemon.weaknesses"
@@ -119,7 +109,6 @@
           {{ getPokemonTypeWeakness(weakness).label }}
         </span>
       </div>
-
       </section>
     </section>
   </main>
