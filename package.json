@@ -11,16 +11,18 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "serve": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
     "serve:dev": "vite --mode dev",
     "serve:qa": "vite --mode qa",
     "serve:prod": "vite --mode prod",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
     "serve-mfe": "vite build && serve dist --listen 3000 --cors",
-    "prepare": "husky install",
-    "lint-staged": "lint-staged",
-    "test:coverage": "jest --coverage --passWithNoTests"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
+    "prepare": "husky install"
   },
   "husky": {
     "pre-commit": "lint-staged"
